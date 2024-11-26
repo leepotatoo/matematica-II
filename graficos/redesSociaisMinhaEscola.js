@@ -30,7 +30,25 @@ function processarDados(dados) {
             type: 'pie',
             textinfo: 'label+percent',
             marker: {
-                colors: ['#8e412e', '#ba6f4d', '#e6cebc', '#a2a182', '#687259', '#f4ece2'] // Paleta de cores personalizada
+const data = [
+    {
+        values: valores,
+        labels: labels,
+        type: 'pie',
+        textinfo: 'label+percent',
+        marker: {
+            colors: [
+                getCSS('#4C6B2F'),       // Instagram
+                getCSS('#D6C9A1'), // Youtube
+                getCSS('#F1C40F'),      // Tiktok
+                getCSS('#B49B73'),      // Twitter/X
+                getCSS('#B4B8B4'),       // Snapchat
+                getCSS('#A3B18C')     // Facebook
+            ]
+        }
+    }
+];
+
             }
         }
     ];
