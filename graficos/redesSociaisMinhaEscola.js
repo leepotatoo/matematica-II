@@ -30,7 +30,7 @@ function processarDados(dados) {
             type: 'pie',
             textinfo: 'label+percent',
             marker: {
-                colors: ['#FF5733', '#33FF57', '#3357FF', '#F3FF33', '#FF33F3'] // Paleta de cores personalizada
+                colors: ['#F1C40F', '#E67E22', '#27AE60', '#4B8C42', '#8E5A3E'] // Paleta de cores personalizada
             }
         }
     ];
