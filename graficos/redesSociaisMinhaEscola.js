@@ -23,6 +23,7 @@ function processarDados(dados) {
     const valores = Object.values(contagemRedesSociais);
     const labels = Object.keys(contagemRedesSociais);
 
+    // Aqui, removi a declaração duplicada de `data` e corrigi a estrutura do gráfico.
     const data = [
         {
             values: valores,
@@ -30,25 +31,14 @@ function processarDados(dados) {
             type: 'pie',
             textinfo: 'label+percent',
             marker: {
-const data = [
-    {
-        values: valores,
-        labels: labels,
-        type: 'pie',
-        textinfo: 'label+percent',
-        marker: {
-            colors: [
-                getCSS('#4C6B2F'),       // Instagram
-                getCSS('#D6C9A1'), // Youtube
-                getCSS('#F1C40F'),      // Tiktok
-                getCSS('#B49B73'),      // Twitter/X
-                getCSS('#B4B8B4'),       // Snapchat
-                getCSS('#A3B18C')     // Facebook
-            ]
-        }
-    }
-];
-
+                colors: [
+                    getCSS('#4C6B2F'),  // Instagram
+                    getCSS('#D6C9A1'),  // Youtube
+                    getCSS('#F1C40F'),  // Tiktok
+                    getCSS('#B49B73'),  // Twitter/X
+                    getCSS('#B4B8B4'),  // Snapchat
+                    getCSS('#A3B18C')   // Facebook
+                ]
             }
         }
     ];
